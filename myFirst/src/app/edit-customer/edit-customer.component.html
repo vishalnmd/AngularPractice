@@ -1,0 +1,47 @@
+<div class="row" style="margin: 50px;">
+    <div class="col-xs-10">
+      <form>
+        <div class="row">
+          <div class="col-sm-3 form-group">
+            <label for="Firstname">First Name</label>
+            <input
+              type="text"
+              id="FirstName"
+              class="form-control"
+              placeholder="First Name"
+              [(ngModel)]="customer.FirstName"             
+              name="FirstName">
+          </div>
+          <div class="col-sm-3 form-group">
+            <label for="LastName">Last Name</label>
+            <input
+              type="text"
+              id="LastName"
+              class="form-control"
+              placeholder="Last Name"
+              [(ngModel)]="customer.LastName"
+              name="LastName"              
+              >
+          </div>          
+          <div class="col-sm-3 form-group">
+            <label for="Employee">Employee</label>
+            <input
+              type="number"
+              id="Employee"
+              placeholder="0"
+              class="form-control"
+              [(ngModel)]="customer.Employee"   
+              name="Employee"   
+              >
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <button class="btn btn-success" (click)="onSave()" type="submit">Save</button>            
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
